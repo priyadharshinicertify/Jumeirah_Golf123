@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="5056" systemVersion="13F34" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FSparkfp">
+            <connections>
+                <outlet property="spinner" destination="vKj-WJ-oQT" id="xho-0O-6uO"/>
+                <outlet property="tblvie" destination="0iy-0E-t30" id="SVx-Gh-w2h"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="0iy-0E-t30">
+                    <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="gQF-Lh-kwK"/>
+                        <outlet property="delegate" destination="-1" id="kGB-aL-L7t"/>
+                    </connections>
+                </tableView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="vKj-WJ-oQT">
+                    <rect key="frame" x="374" y="502" width="37" height="37"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="color" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </activityIndicatorView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="0iy-0E-t30" secondAttribute="bottom" id="0nl-7e-IRG"/>
+                <constraint firstItem="0iy-0E-t30" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="2Hk-MJ-vAD"/>
+                <constraint firstItem="vKj-WJ-oQT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="374" id="B0I-At-2Sd"/>
+                <constraint firstItem="0iy-0E-t30" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Cz9-FW-sAh"/>
+                <constraint firstAttribute="trailing" secondItem="0iy-0E-t30" secondAttribute="trailing" id="QjD-Ow-ey5"/>
+                <constraint firstItem="vKj-WJ-oQT" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="502" id="iYH-aC-zSU"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+        </view>
+    </objects>
+</document>

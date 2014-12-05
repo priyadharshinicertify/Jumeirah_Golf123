@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="5056" systemVersion="13F34" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FTmain">
+            <connections>
+                <outlet property="tableView" destination="x7y-E5-WA1" id="YR1-zZ-aoV"/>
+                <outlet property="view" destination="iN0-l3-epB" id="AqK-KA-Xhb"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="26" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="x7y-E5-WA1">
+                    <rect key="frame" x="0.0" y="84" width="292" height="685"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="292" id="P0Z-um-UYR"/>
+                    </constraints>
+                    <color key="sectionIndexColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="fR1-Lm-87A"/>
+                        <outlet property="delegate" destination="-1" id="vno-c1-fEA"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aN1-ys-5p8">
+                    <rect key="frame" x="42" y="37" width="75" height="33"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="75" id="tES-le-NX7"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="Districts">
+                        <color key="titleColor" red="1" green="0.65490196079999996" blue="0.070588235289999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="dist:" destination="-1" eventType="touchUpInside" id="FN9-Xz-01e"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reside_districts_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="mC4-p8-QT5">
+                    <rect key="frame" x="8" y="37" width="35" height="27"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="27" id="cP5-wb-CZK"/>
+                        <constraint firstAttribute="width" constant="35" id="wkc-Xy-9GB"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="mC4-p8-QT5" firstAttribute="top" secondItem="aN1-ys-5p8" secondAttribute="top" id="2YI-GW-xsi"/>
+                <constraint firstItem="mC4-p8-QT5" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="CnX-TL-7Gk"/>
+                <constraint firstItem="mC4-p8-QT5" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="37" id="FTZ-X6-O2l"/>
+                <constraint firstItem="aN1-ys-5p8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="42" id="HgX-rH-QB7"/>
+                <constraint firstItem="x7y-E5-WA1" firstAttribute="top" secondItem="aN1-ys-5p8" secondAttribute="bottom" constant="14" id="h8F-cx-Tvf"/>
+                <constraint firstItem="x7y-E5-WA1" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="lxF-6N-tsy"/>
+                <constraint firstAttribute="bottom" secondItem="x7y-E5-WA1" secondAttribute="bottom" constant="-1" id="oPr-3g-TQO"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="reside_districts_icon.png" width="600" height="600"/>
+    </resources>
+</document>
